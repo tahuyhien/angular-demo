@@ -1,0 +1,32 @@
+<h1>Demo Vision Api</h1>
+
+
+<input type="file" ng2FileSelect [uploader]="uploader">
+
+
+<div class="container">
+  <div class="col-2">
+    <div class="img-preview">
+      <img *ngIf="imageUrlPath" [src] = imageUrlPath>              
+     </div>
+  </div>
+  <div class="col-2">
+    <div> <b>Text Detection: </b> </div>
+    <div> {{textDetection}} </div>
+  </div>
+</div>
+
+<!-- <mat-grid-list cols="2">
+  <mat-grid-tile>
+    <div class="img-preview">
+      <img *ngIf="imageUrlPath" [src] = imageUrlPath>              
+     </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div> <b>Text Detection: </b> </div>
+    <div> {{textDetection}} </div>
+  </mat-grid-tile>
+  
+</mat-grid-list> -->
+
+
